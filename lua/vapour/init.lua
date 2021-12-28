@@ -59,7 +59,7 @@ Vapour = {
         return lazygit:toggle()
       end,
       which_key = {
-        root = "T",
+        root = "t",
         name = "Terminal",
         definitions = {
           t = {":ToggleTerm<cr>", "Split Below"},
