@@ -1,24 +1,38 @@
 ## Comands
 
-1. The space key is mapped to the leader key
-2. Use jk or kj to escape out of insert mode(I recommend using the caps lock key as escape)
-3. Leader + e is to toggle the file tree
-4. Leader + l is used to open lazygit
-5. Alt + hjkl are used to resize windows
-6. Ctrl + hjkl are used to navigate around windows
-7. Tab and Shift-Tab are used to cycle through buffers
-8. K and J are used to move the selected text up or down in visual mode
-9. Leader + / is used to comment or uncomment the current line in normal mode and selected lines in visual mode
-10. Leader + r is used to grep text using telescope
-11. Leader + f is used to find files using telescope
-12. Leader + b is used to search buffers using telescope
-13. s is used to hop two characters using hop.nvim
-14. S is used to hop words using hop.nvim
-15. Ctrl + jk is used to navigate through the completion menu
-16. You can use both Leader + t or Ctrl + \ to open toggleterm
-17. Shift + k is used for lspsaga hover doc
-18. gd is for go to definition
-19. gD is for go to declaration
-20. gr is for references
-21. gi is for implementation
-22. ca is for code actions
+* The space key is mapped to the leader key
+* Use jk or kj to escape out of insert mode(I recommend using the caps lock key as escape)
+* Leader + e is to toggle the file tree
+* Leader + l is used to open lazygit
+* Alt + hjkl are used to resize windows
+* Ctrl + hjkl are used to navigate around windows
+* Tab and Shift-Tab are used to cycle through buffers
+* K and J are used to move the selected text up or down in visual mode
+* Leader + / is used to comment or uncomment the current line in normal mode and selected lines in visual mode
+* Leader + r is used to grep text using telescope
+* Leader + f is used to find files using telescope
+* Leader + b is used to search buffers using telescope
+* s is used to hop two characters using hop.nvim
+* S is used to hop words using hop.nvim
+* Ctrl + jk is used to navigate through the completion menu
+* You can use both Leader + t or Ctrl + \ to open toggleterm
+* Shift + k is used for lspsaga hover doc
+* gd is for go to definition
+* gD is for go to declaration
+* gr is for references
+* gi is for implementation
+* ca is for code actions
+
+## Installation
+
+```
+git clone https://github.com/PrinceP/nvim ~/.config/nvim
+nvim +PackerSync
+```
+
+## Requirements
+
+* [Neovim Version > 0.5](https://github.com/neovim/neovim/releases/tag/v0.5.0) - Required - For lua configuration
+* [NodeJS](https://nodejs.org) - Required - For LSP
+* [Lazygit](https://github.com/jesseduffield/lazygit) - Optional - For git integration
+* [RipGrep](https://github.com/BurntSushi/ripgrep) - Optional - For telescope live grep
