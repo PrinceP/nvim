@@ -36,6 +36,11 @@ local mappings = {
     s = {":PackerSync<cr>", "Sync Plugins"},
     S = {":PackerStatus<cr>", "Packer Status"},
     u = {":PackerUpdate<cr>", "Update Plugins"}
+  },
+  z = {
+    name = "Zen Focus",
+    z = {":ZenMode<cr>", "Toggle Zen Mode"},
+    t = {":Twilight<cr>", "Toggle Twilight"}
   }
 }
 

@@ -39,6 +39,19 @@ return packer.startup(function(use)
   use {'glepnir/dashboard-nvim', disable = not is_enabled('dashboard'), config = "require'dashboard-config'", event = 'BufWinEnter'}
   use {'lukas-reineke/indent-blankline.nvim', disable = not is_enabled('indent_blankline'), config = "require'blankline-config'", event = "BufRead"}
 
+  use {
+     "folke/zen-mode.nvim",
+     config = 'require("zen-mode-config")',
+     disable = not is_enabled('zen_mode'),
+     cmd = "ZenMode"
+   }
+   use {
+     "folke/twilight.nvim",
+     config = "require('twilight-config')",
+     disable = not is_enabled('twilight'),
+     cmd = "ZenMode"
+   }
+
   -- Tree-Sitter
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -94,8 +107,12 @@ return packer.startup(function(use)
 
   -- Other
   use {'terrortylor/nvim-comment', cmd = "CommentToggle", config = "require('nvim_comment').setup()", disable = not is_enabled('nvim_comment')}
-  use {'lukas-reineke/format.nvim', disable = not is_enabled('format'), config = "require'formatting'"}
   use {'folke/which-key.nvim', event = "BufWinEnter"}
-
+  use {
+     'jose-elias-alvarez/null-ls.nvim',
+     disable = not is_enabled('null_ls'),
+     config = "require'null-ls-config'",
+     event = "InsertEnter"
+  }
   for _, plugin in pairs(Vapour.plugins.user) do use(plugin) end
 end)

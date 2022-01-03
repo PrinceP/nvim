@@ -23,6 +23,8 @@ Vapour = {
     }
   },
   plugins = {
+    zen_mode = {enabled = true, enable_rainbow_colors = true},
+    twilight = {enabled = true, enable_rainbow_colors = true},
     indent_blankline = {enabled = true, enable_rainbow_colors = true},
     colorizer = {enabled = true},
     autopairs = {enabled = true},
@@ -65,7 +67,7 @@ Vapour = {
     telescope = {enabled = true},
     nvim_tree = {enabled = true},
     dial = {enabled = true},
-    format = {enabled = true},
+    null_ls = {enabled = true},
     nvim_comment = {enabled = true},
     cmp = {
       enabled = true,
