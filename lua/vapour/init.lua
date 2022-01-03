@@ -57,7 +57,7 @@ Vapour = {
     treesitter = {
       enabled = true,
       ensure_installed = "all",
-      ignore_install = {"haskell"},
+      ignore_install = {"haskell", "php", "elm", "tlaplus"},
       indent = {enable = false},
       highlight = {enable = true},
       autotag = {enable = true},
