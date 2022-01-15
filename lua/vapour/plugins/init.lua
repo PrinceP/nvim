@@ -111,8 +111,7 @@ return packer.startup(function(use)
   use {
      'jose-elias-alvarez/null-ls.nvim',
      disable = not is_enabled('null_ls'),
-     config = "require'null-ls-config'",
-     event = "InsertEnter"
+     config = "require'null-ls-config'"
   }
   for _, plugin in pairs(Vapour.plugins.user) do use(plugin) end
 end)
