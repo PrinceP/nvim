@@ -28,6 +28,7 @@
 
 ```
 git clone https://github.com/PrinceP/nvim ~/.config/nvim
+cd ~/.config/nvim
 nvim +PackerSync
 ```
 
