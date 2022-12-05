@@ -1,11 +1,7 @@
-vim.g.nvim_tree_ignore = {'*.tmp', '.git'}
-vim.g.nvim_tree_indent_markers = 1
-require'nvim-tree'.setup {
+require("nvim-tree").setup({
   disable_netrw = true,
   hijack_netrw = true,
   open_on_setup = true,
-  ignore_ft_on_setup = {'dashboard'},
-  auto_close = true,
   open_on_tab = false,
   hijack_cursor = true,
   update_cwd = true,
@@ -16,6 +12,21 @@ require'nvim-tree'.setup {
     -- the command arguments as a list
     args = {}
   },
-
-  view = {width = 25, side = 'left', auto_resize = true, mappings = {custom_only = false, list = {}}}
-}
+  
+  filters = {
+    dotfiles = true,
+    custom={'*.tmp', '.git', 'node_modules', 'package-lock.json'}
+  },
+  renderer = {
+    group_empty = true,
+  },
+  view = {
+    width = 25,
+    side = 'left',
+    adaptive_size = true,
+    mappings = {
+      custom_only = false, 
+      list = {}
+    }
+  },
+})
