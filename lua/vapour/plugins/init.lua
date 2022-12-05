@@ -73,7 +73,7 @@ return packer.startup(function(use)
   use {'tiagovla/tokyodark.nvim', opt = true}
 
   -- LSP and Autocomplete
-  use {'neovim/nvim-lspconfig', event = "BufRead"}
+  use {'neovim/nvim-lspconfig'}
   use {'williamboman/nvim-lsp-installer'}
   use {'onsails/lspkind-nvim'}
   use {
